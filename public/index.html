@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="./build/tailwind.css" />
   </head>
   <body class="min-w-320px">
-    <nav id="nav" class="bg-apple-gray bg-apple-graysm:h-12 sm:bg-apple-gray md:h-11 md:px-3 text-sm antialiased">
+    <nav id="nav" class="bg-apple-gray sm:h-12 sm:bg-apple-gray md:h-23/2 md:px-3 text-sm antialiased">
       <div
         class="flex items-center justify-between h-full sm:max-w-1000px sm:pb-1 mx-auto"
       >
         <div
           id="hamburger"
-          class="relative h-11 w-11 mb-1 sm:hidden cursor-pointer"
+          class="relative h-23/2 w-23/2 mb-1 sm:hidden cursor-pointer"
         >
           <span class="absolute h-full w-full hamburger-top-wrapper">
             <span class="bar hamburger-top"></span>
@@ -23,7 +23,7 @@
           </span>
         </div>
         <svg
-          class="inline-block mb-1 h-11 w-11 sm:mb-0 sm:h-10 sm:w-10 fill-current text-gray-300 hover:text-white cursor-pointer"
+          class="inline-block mb-1 h-23/2 w-23/2 sm:mb-0 sm:h-10 sm:w-10 fill-current text-gray-300 hover:text-white cursor-pointer"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 15 40"
         >
@@ -32,54 +32,56 @@
             d="M8.02 16.23c-.73 0-1.86-.83-3.05-.8-1.57.02-3.01.91-3.82 2.32-1.63 2.83-.42 7.01 1.17 9.31.78 1.12 1.7 2.38 2.92 2.34 1.17-.05 1.61-.76 3.03-.76 1.41 0 1.81.76 3.05.73 1.26-.02 2.06-1.14 2.83-2.27.89-1.3 1.26-2.56 1.28-2.63-.03-.01-2.45-.94-2.48-3.74-.02-2.34 1.91-3.46 2-3.51-1.1-1.61-2.79-1.79-3.38-1.83-1.54-.12-2.83.84-3.55.84zm2.6-2.36c.65-.78 1.08-1.87.96-2.95-.93.04-2.05.62-2.72 1.4-.6.69-1.12 1.8-.98 2.86 1.03.08 2.09-.53 2.74-1.31"
           />
         </svg>
-        <div class="h-full hidden sm:block">
-          <a
-            href="#"
-            class="inline-block leading-11 text-gray-300 h-full hover:text-white"
-            >Mac</a
-          >
-        </div>
-        <div class="h-full hidden sm:block">
-          <a
-            href="#"
-            class="inline-block h-full leading-11 text-gray-300 hover:text-white"
-            >iPad</a
-          >
-        </div>
-        <div class="h-full hidden sm:block">
-          <a
-            href="#"
-            class="inline-block h-full leading-11 text-gray-300 hover:text-white"
-            >iPhone</a
-          >
-        </div>
-        <div class="h-full hidden sm:block">
-          <a
-            href="#"
-            class="inline-block h-full leading-11 text-gray-300 hover:text-white"
-            >Watch</a
-          >
-        </div>
-        <div class="h-full hidden sm:block">
-          <a
-            href="#"
-            class="inline-block h-full leading-11 text-gray-300 hover:text-white"
-            >TV</a
-          >
-        </div>
-        <div class="h-full hidden sm:block">
-          <a
-            href="#"
-            class="inline-block h-full leading-11 text-gray-300 hover:text-white"
-            >Music</a
-          >
-        </div>
-        <div class="h-full hidden sm:block">
-          <a
-            href="#"
-            class="inline-block h-full leading-11 text-gray-300 hover:text-white"
-            >Support</a
-          >
+        <div class="w-7/10 hidden sm:flex sm:justify-between sm:py-1/2">
+          <div class="h-full hidden sm:block">
+            <a
+              href="#"
+              class="inline-block text-gray-300 h-full hover:text-white"
+              >Mac</a
+            >
+          </div>
+          <div class="h-full hidden sm:block">
+            <a
+              href="#"
+              class="inline-block h-full text-gray-300 hover:text-white"
+              >iPad</a
+            >
+          </div>
+          <div class="h-full hidden sm:block">
+            <a
+              href="#"
+              class="inline-block h-full text-gray-300 hover:text-white"
+              >iPhone</a
+            >
+          </div>
+          <div class="h-full hidden sm:block">
+            <a
+              href="#"
+              class="inline-block h-full text-gray-300 hover:text-white"
+              >Watch</a
+            >
+          </div>
+          <div class="h-full hidden sm:block">
+            <a
+              href="#"
+              class="inline-block h-full text-gray-300 hover:text-white"
+              >TV</a
+            >
+          </div>
+          <div class="h-full hidden sm:block">
+            <a
+              href="#"
+              class="inline-block h-full text-gray-300 hover:text-white"
+              >Music</a
+            >
+          </div>
+          <div class="h-full hidden sm:block">
+            <a
+              href="#"
+              class="inline-block h-full text-gray-300 hover:text-white"
+              >Support</a
+            >
+          </div>
         </div>
         <svg
           class="hidden sm:inline-block h-10 w-10 fill-current text-gray-300 hover:text-white cursor-pointer"
@@ -96,7 +98,7 @@
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 15 40"
           id="bag"
-          class="inline-block sm:visible mb-1 mr-1 h-10 w-10 sm:mb-0 sm:mr-0 fill-current text-gray-300 hover:text-white cursor-pointer"
+          class="inline-block sm:visible sm:-ml-3 mb-1 mr-1 h-10 w-10 sm:mb-0 sm:mr-0 fill-current text-gray-300 hover:text-white cursor-pointer"
         >
           <g>
             <path
@@ -105,7 +107,7 @@
           </g>
         </svg>
       </div>
-      <div id="menu-expanded" class="hidden bg-black">
+      <div id="menu-expanded" class="hidden h-90vh bg-black sm:hidden">
         <div class="block sm:hidden h-13 border-b-1/2 border-apple-gray-light border-opacity-50">
           <div class="flex align-items-center w-14/15 mx-auto bg-apple-gray-dark py-1/2 rounded-lg cursor-pointer"">
             <svg
@@ -129,7 +131,8 @@
           </div>
           <br>
         </div>
-        <div class="block h-screen w-8/10 sm:hidden mx-auto mt-1 divide-y divide-apple-gray-light divide-opacity-50 text-md text-gray-300">
+
+        <div class="block w-8/10 sm:hidden mx-auto mt-1 divide-y divide-apple-gray-light divide-opacity-50 text-md text-gray-300">
           <div class="block">
             <a
               href="#"
@@ -181,7 +184,6 @@
           </div>
         </div>
       </div>
-     
     </nav>
   </body>
   <script src="./index.js"></script>

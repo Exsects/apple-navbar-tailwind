@@ -1,23 +1,25 @@
 module.exports = {
-  purge: ['./public/index.html'],
+  purge: ['./public/index.html', './public/index.js'],
   theme: {
     extend: {
       colors: {
         'apple-gray': {
           'light': 'rgb(110, 110, 115)',
-          'default': 'rgba(45, 45, 45, 0.98)',
+          'default': 'rgb(51, 51, 51)',
           'dark': 'rgb(29, 29, 31)'
         }
       },
       height: {
-        '11': '2.875rem',
+        '23/2': '2.875rem',
         '13': '3.25rem',
-        '30px': '30px'
+        '30px': '30px',
+        '90vh': '90vh',
       },
       width: {
         '8/10': '80%',
+        '7/10': '70%',
         '14/15': '93.333333333333%',   
-        '11': '2.875rem',
+        '23/2': '2.875rem',
         '30px': '30px'
       },
       minWidth: {

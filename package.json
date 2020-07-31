@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build:dev": "postcss css/tailwind.css -o public/build/tailwind.css --watch",
-    "build:prod": "NODE_ENV=production postcss css/tailwind.css -o public/build/tailwind.css",
+    "build:prod": "cross-env NODE_ENV=production postcss css/tailwind.css -o public/build/tailwind.css",
     "server": "live-server public"
   },
   "keywords": [],
@@ -15,9 +15,10 @@
     "tailwindcss": "^1.6.0"
   },
   "devDependencies": {
-    "postcss-cli": "^7.1.1",
     "autoprefixer": "^9.8.5",
+    "cross-env": "^7.0.2",
     "cssnano": "^4.1.10",
-    "live-server": "^1.2.1"
+    "live-server": "^1.2.1",
+    "postcss-cli": "^7.1.1"
   }
 }

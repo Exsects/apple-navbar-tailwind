@@ -5,6 +5,7 @@ const nav = document.getElementById('nav');
 const navContainer = document.getElementById('nav-container');
 const navLinks = document.getElementById('nav-links');
 const searchBar = document.getElementById('search-bar');
+
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('hamburger-active');
     bag.classList.toggle('invisible');

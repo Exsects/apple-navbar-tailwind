@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="./build/tailwind.css" />
   </head>
   <body class="min-w-320px">
-    <nav class="sm:h-12 md:h-11 bg-apple-gray md:px-3 text-sm">
+    <nav id="nav" class="bg-apple-gray bg-apple-graysm:h-12 sm:bg-apple-gray md:h-11 md:px-3 text-sm antialiased">
       <div
-        class="flex items-center justify-between antialiased h-full sm:max-w-1000px sm:pb-1 mx-auto"
+        class="flex items-center justify-between h-full sm:max-w-1000px sm:pb-1 mx-auto"
       >
         <div
           id="hamburger"
@@ -90,15 +90,13 @@
             <path
               d="M17.512,29.417l-4.786-4.788a7.068,7.068,0,1,0-.777.778l4.785,4.788a.55.55,0,1,0,.777-.777ZM1.427,20.054a5.946,5.946,0,1,1,5.946,5.954A5.957,5.957,0,0,1,1.427,20.054Z"
             />
-            <path
-              d="M17.512,73.417l-4.786-4.788a7.068,7.068,0,1,0-.777.778l4.785,4.788a.55.55,0,1,0,.777-.777ZM1.427,64.054a5.946,5.946,0,1,1,5.946,5.954A5.957,5.957,0,0,1,1.427,64.054Z"
-            />
           </g>
         </svg>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 15 40"
-          class="inline-block mb-1 mr-1 h-10 w-10 sm:mb-0 sm:mr-0 fill-current text-gray-300 hover:text-white cursor-pointer"
+          id="bag"
+          class="inline-block sm:visible mb-1 mr-1 h-10 w-10 sm:mb-0 sm:mr-0 fill-current text-gray-300 hover:text-white cursor-pointer"
         >
           <g>
             <path
@@ -107,6 +105,83 @@
           </g>
         </svg>
       </div>
+      <div id="menu-expanded" class="hidden bg-black">
+        <div class="block sm:hidden h-13 border-b-1/2 border-apple-gray-light border-opacity-50">
+          <div class="flex align-items-center w-14/15 mx-auto bg-apple-gray-dark py-1/2 rounded-lg cursor-pointer"">
+            <svg
+            class="inline-block h-8 w-8 fill-current text-apple-gray-light"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 45"
+          >
+            <g>
+              <path
+                d="M17.512,29.417l-4.786-4.788a7.068,7.068,0,1,0-.777.778l4.785,4.788a.55.55,0,1,0,.777-.777ZM1.427,20.054a5.946,5.946,0,1,1,5.946,5.954A5.957,5.957,0,0,1,1.427,20.054Z"
+              />
+            </g>
+          </svg>
+          <input
+            type="text"
+            class="bg-apple-gray-dark placeholder-apple-gray-light text-white text-md font-normal outline-none"
+            name="search"
+            placeholder="Search apple.com"
+            id="search"
+          />
+          </div>
+          <br>
+        </div>
+        <div class="block h-screen w-8/10 sm:hidden mx-auto mt-1 divide-y divide-apple-gray-light divide-opacity-50 text-md text-gray-300">
+          <div class="block">
+            <a
+              href="#"
+              class="inline-block leading-11 text-gray-300 h-full hover:text-white"
+              >Mac</a
+            >
+          </div>
+          <div class="block">
+            <a
+              href="#"
+              class="inline-block h-full leading-11 text-gray-300 hover:text-white"
+              >iPad</a
+            >
+          </div>
+          <div class="block">
+            <a
+              href="#"
+              class="inline-block h-full leading-11 text-gray-300 hover:text-white"
+              >iPhone</a
+            >
+          </div>
+          <div class="block">
+            <a
+              href="#"
+              class="inline-block h-full leading-11 text-gray-300 hover:text-white"
+              >Watch</a
+            >
+          </div>
+          <div class="block">
+            <a
+              href="#"
+              class="inline-block h-full leading-11 text-gray-300 hover:text-white"
+              >TV</a
+            >
+          </div>
+          <div class="block">
+            <a
+              href="#"
+              class="inline-block h-full leading-11 text-gray-300 hover:text-white"
+              >Music</a
+            >
+          </div>
+          <div class="block">
+            <a
+              href="#"
+              class="inline-block h-full leading-11 text-gray-300 hover:text-white"
+              >Support</a
+            >
+          </div>
+        </div>
+      </div>
+     
     </nav>
   </body>
   <script src="./index.js"></script>

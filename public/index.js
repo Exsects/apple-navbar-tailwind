@@ -1,13 +1,16 @@
+const body = document.getElementsByTagName('body')[0];
 const hamburger = document.getElementById('hamburger');
 const bag = document.getElementById('bag');
 const nav = document.getElementById('nav');
-const menuExpanded = document.getElementById('menu-expanded');
-
+const navContainer = document.getElementById('nav-container');
+const navLinks = document.getElementById('nav-links');
+const searchBar = document.getElementById('search-bar');
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('hamburger-active');
     bag.classList.toggle('invisible');
-    menuExpanded.classList.toggle('hidden');
     nav.classList.toggle('bg-apple-gray');
-    nav.classList.toggle('bg-black');
+    body.classList.toggle('bg-black');
+    navLinks.classList.toggle('hidden');
+    searchBar.classList.toggle('hidden');
 });
 
